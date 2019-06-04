@@ -6,7 +6,7 @@ import pandas as pd
 from apyori import apriori
 
 store_data = pd.read_csv(
-    "/Users/azhmakin/Documents/projects/own/university/intelligent-data-analysis/lab-6/assets/store_data.csv",
+    "assets/store_data.csv",
     header=None,
 )
 
