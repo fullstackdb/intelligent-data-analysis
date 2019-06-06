@@ -1,0 +1,6 @@
+
+# IDE files.
+.idea/
+
+# Installed venv files.
+venv/

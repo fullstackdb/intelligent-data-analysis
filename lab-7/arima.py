@@ -8,7 +8,7 @@ from sklearn.metrics import mean_squared_error
 def parser(x):
 	return datetime.strptime('190'+x, '%Y-%m')
 
-series = read_csv('/Users/azhmakin/Documents/projects/own/university/intelligent-data-analysis/lab-7/assets/shampoo.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
+series = read_csv('assets/shampoo.csv', header=0, parse_dates=[0], index_col=0, squeeze=True, date_parser=parser)
 X = series.values
 size = int(len(X) * 0.66)
 train, test = X[0:size], X[size:len(X)]

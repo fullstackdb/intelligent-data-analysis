@@ -5,7 +5,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # using absolute path to prevent WORKDIR issue
-bankdata = pd.read_csv('/Users/azhmakin/Documents/projects/own/university/intelligent-data-analysis/lab-4/assets/bill_authentication.csv');
+bankdata = pd.read_csv('assets/bill_authentication.csv');
 
 X = bankdata.drop('Class', axis=1)
 y = bankdata['Class']
